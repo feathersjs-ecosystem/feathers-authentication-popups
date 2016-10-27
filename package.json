@@ -3,7 +3,7 @@
   "description": "Server and client utils for implementing popup-based authentication flows",
   "version": "0.0.0",
   "homepage": "https://github.com/feathersjs/feathers-authentication-popups",
-  "main": "lib/",
+  "main": "lib/index",
   "keywords": [
     "feathers",
     "feathers-plugin"
@@ -14,8 +14,8 @@
     "url": "git://github.com/feathersjs/feathers-authentication-popups.git"
   },
   "author": {
-    "name": "Feathers contributors",
-    "email": "hello@feathersjs.com",
+    "name": "Marshall Thompson",
+    "email": "marshall@creativeideall.net",
     "url": "https://feathersjs.com"
   },
   "contributors": [],

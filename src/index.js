@@ -1,6 +1,8 @@
 import EventEmitter from 'events';
 
-export const authAgent = window.authAgent = new EventEmitter();
+window.authAgent = new EventEmitter()
+
+export const authAgent = window.authAgent;
 
 /*
  * A helper template to that opens the provided URL in a centered popup.

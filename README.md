@@ -89,34 +89,22 @@ Triggers the event attached to the provided `eventName` and calls the subscribed
 
 ## Using the Express Middleware
 
-The Express middleware is meant to be registered as the success callback of the Feathers OAuth2 plugin.
+The Express middleware is meant to be registered as the success callback of a Feathers authentication workflow.
 
-Here's an example of a Feathers server that uses `feathers-authentication-popups`. 
+### `handleAuthPopups(app)`
+
+Creates Express middleware that handles successful auth by returning an HTML page that:
+* Pulls the token from the `app` JWT cookie location. The default is `feathers-jwt`
+* Sends the token to the parent window through the `authAgent`.
+* Closes the popup window.
 
 ```js
-const feathers = require('feathers');
-const rest = require('feathers-rest');
-const hooks = require('feathers-hooks');
-const bodyParser = require('body-parser');
-const errorHandler = require('feathers-errors/handler');
 const handleAuthPopups = require('feathers-authentication-popups/middleware');
 
-// Initialize the application
-const app = feathers()
-  .configure(rest())
-  .configure(hooks())
-  // Needed for parsing bodies (login)
-  .use(bodyParser.json())
-  .use(bodyParser.urlencoded({ extended: true }))
-  // Initialize your feathers plugin
-  .use('/plugin', plugin())
-  .get('/auth/success', handleAuthPopups)
-  .use(errorHandler());
-
-app.listen(3030);
-
-console.log('Feathers app started on 127.0.0.1:3030');
+app.get('/auth/success', handleAuthPopups(app))
 ```
+
+1. **app** {FeathersServer}: The Feathers server object.
 
 
 ## License

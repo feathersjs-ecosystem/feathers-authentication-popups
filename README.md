@@ -104,7 +104,7 @@ const handleAuthPopups = require('feathers-authentication-popups/middleware');
 app.get('/auth/success', handleAuthPopups(app))
 ```
 
-1. **app** {FeathersServer}: The Feathers server object.
+1. **app** `{FeathersServer}`: The Feathers server object.
 
 
 ## License

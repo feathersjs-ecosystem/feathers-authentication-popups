@@ -5,10 +5,12 @@ node_js:
   - '4'
 addons:
   code_climate:
-    repo_token: 'your repo token'
+    repo_token: 6e8d12460525a532640877cea4a4c85455d58dd88561f4b51f6c8fc6ca525ef1
 notifications:
-  slack: feathersjs:T4tvpJFt27wJZABjLSg5OqMv
   email: false
+  slack:
+    rooms:
+      secure: DY9seyYvvSgJDT3FJZvojZr8qhve6a0QKfxYGVbtM+alrtEid62MDaBlbkkr2I2ryQ8+MoYZNQ4Uyp1GPgR02CHx8xZTMdpr6GL2mq+g1IgFAR8z7hlgF7GD6zl7cIp3OPKo3sd/ie/O6G4HvRoCnvgHC0rQu2L2/zPDsZeuFBVyvQohgs1ecvTb5yPC13+44+T6hXUpgzAvvJQXnpYPX3nlZYkpcU3lYDJBpz0/6cqSRO9bFT4ueiae9d39MzsLnsTnmctYAGeXFNn8ZmUQdPfWzphnfVVfyFyCHEuMNZOT6oyKHFLM8dD8Zw4CE4wp7z94dZBwVHN/lpBYEpitSpZmDPbAIjXu4vMDAzFNLd4J4tGN4dUj95c0AqF2JcIJriHfjLCUSyFNLXt2JgiaPq6TXXGkBc8+lOxio/3IjsEaDBhLplPjW/0BHqb3NrUh90AxKWmo+aGx+opX6/Ex920H8IRcwzdITiUWbfhdY2pDP7GQ4TgJhiZVoSp/D1jXrT2ujDE+NUv5H4RRCj/33GlLUirqI/MHJRqSceihEhbNcp5/Ro5AHT7I95jugQq5C25nJisAhOgrXgLeiBrT+tgA2BjTJQxCACa3ohOKXrZC0DYlkN6NPYwuEp2reRueLaoaQ+wzKcwnOuKrv1euniP7oOGlV1bIjuoTMHZrPUw=
 before_script:
   - npm install -g codeclimate-test-reporter
 after_script:

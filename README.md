@@ -40,19 +40,21 @@ The default `options` are:
 
 ## `authAgent`
 
-An EventEmitter automatically assigned as a global on the `window` object to allow popup windows to send information back to the main application window.  Both windows must be on the same domain.
+An EventEmitter automatically assigned as a global at `window.authAgent` to allow popup windows to send information back to the main window.  Both windows must be on the same domain for this to work.
 
 **Usage in the primary application window:**
 
 ```js
-import {authAgent) from 'feathers-authentication-popups';
+// Adds 
+import 'feathers-authentication-popups';
 
 function doSomethingWithToken (token) {
 	// Do something with the token
 }
 
-authAgent.on('login', doSomethingWithToken);
+window.authAgent.on('login', doSomethingWithToken);
 ```
+The `doSomethingWithToken` function will run when the 'login' event is emitted on `window.authAgent`.
 
 **Usage in the popup window on the same domain:**
 ```js

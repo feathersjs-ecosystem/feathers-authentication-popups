@@ -107,7 +107,6 @@ app.get('/auth/success', handleAuthPopups(app))
 
 1. **app** `{FeathersServer}`: The Feathers server object.
 
-
 ## License
 
 Copyright (c) 2016

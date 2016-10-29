@@ -19,8 +19,6 @@ npm install feathers-authentication-popups --save
 
 This package includes a few useful tools for implementing popup-based OAuth login flows.  It contains utility functions for the browser and middleware for the server.
 
-Please refer to the [feathers-authentication-popups documentation](http://docs.feathersjs.com/) for more details.
-
 ## Using the Client Utils
 There are two client utilities: one to assist with opening popups, and another to assist in cross-window communication.
 

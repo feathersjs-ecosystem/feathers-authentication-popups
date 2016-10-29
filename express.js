@@ -1,7 +1,9 @@
 
-module.exports = function (app) {
-  var cookieConfig = app.get('cookie');
-  var cookieName = cookieConfig && cookieConfig.name || 'feathers-jwt';
+module.exports = function (options) {
+  var cookieName = typeof options === 'string' ? options : options.name;
+  if (!cookieName) {
+    throw new Error('You must provide a cookie name {String} or an object with a `name` property to the authentication-popups middleware.');
+  }
   var template = `<html>
     <head>
       <script>
@@ -19,9 +21,9 @@ module.exports = function (app) {
           }
           return null;
         }
-        var token = readCookie('${cookieName}');
-        if (token && window.opener) {
-          window.opener.authAgent.emit('login', token);
+        var cookieContents = readCookie('${cookieName}');
+        if (cookieContents && window.opener) {
+          window.opener.authAgent.emit('login', cookieContents);
           window.close();
         }
       </script>

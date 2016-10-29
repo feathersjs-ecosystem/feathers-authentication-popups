@@ -1,9 +1,9 @@
 {
-  "name": "feathers-authentication-popups",
+  "name": "authentication-popups",
   "description": "Server and client utils for implementing popup-based authentication flows",
   "version": "0.0.5",
-  "homepage": "https://github.com/feathersjs/feathers-authentication-popups",
-  "main": "lib/index",
+  "homepage": "https://github.com/feathersjs/authentication-popups",
+  "main": "lib/authentication-popups",
   "keywords": [
     "feathers",
     "feathers-plugin"
@@ -11,7 +11,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/feathersjs/feathers-authentication-popups.git"
+    "url": "git://github.com/feathersjs/authentication-popups.git"
   },
   "author": {
     "name": "Marshall Thompson",
@@ -20,7 +20,7 @@
   },
   "contributors": [],
   "bugs": {
-    "url": "https://github.com/feathersjs/feathers-authentication-popups/issues"
+    "url": "https://github.com/feathersjs/authentication-popups/issues"
   },
   "engines": {
     "node": ">= 4.6.0"

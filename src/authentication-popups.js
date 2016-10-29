@@ -1,6 +1,6 @@
 import EventEmitter from 'events';
 
-window.authAgent = new EventEmitter()
+window.authAgent = new EventEmitter();
 
 export const authAgent = window.authAgent;
 

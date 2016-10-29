@@ -6,7 +6,7 @@ global.window = {
 };
 
 import { expect } from 'chai';
-import openLoginPopup, {authAgent, getCenterCoordinates} from '../src/index';
+import openLoginPopup, {authAgent, getCenterCoordinates} from '../src/authentication-popups';
 import EventEmitter from 'events';
 
 describe('Client Utils', () => {

@@ -1,10 +1,10 @@
-# feathers-authentication-popups
+# authentication-popups
 
-[![Build Status](https://travis-ci.org/feathersjs/feathers-authentication-popups.png?branch=master)](https://travis-ci.org/feathersjs/feathers-authentication-popups)
-[![Code Climate](https://codeclimate.com/github/feathersjs/feathers-authentication-popups/badges/gpa.svg)](https://codeclimate.com/github/feathersjs/feathers-authentication-popups)
-[![Test Coverage](https://codeclimate.com/github/feathersjs/feathers-authentication-popups/badges/coverage.svg)](https://codeclimate.com/github/feathersjs/feathers-authentication-popups/coverage)
-[![Dependency Status](https://img.shields.io/david/feathersjs/feathers-authentication-popups.svg?style=flat-square)](https://david-dm.org/feathersjs/feathers-authentication-popups)
-[![Download Status](https://img.shields.io/npm/dm/feathers-authentication-popups.svg?style=flat-square)](https://www.npmjs.com/package/feathers-authentication-popups)
+[![Build Status](https://travis-ci.org/feathersjs/authentication-popups.png?branch=master)](https://travis-ci.org/feathersjs/authentication-popups)
+[![Code Climate](https://codeclimate.com/github/feathersjs/authentication-popups/badges/gpa.svg)](https://codeclimate.com/github/feathersjs/authentication-popups)
+[![Test Coverage](https://codeclimate.com/github/feathersjs/authentication-popups/badges/coverage.svg)](https://codeclimate.com/github/feathersjs/authentication-popups/coverage)
+[![Dependency Status](https://img.shields.io/david/feathersjs/authentication-popups.svg?style=flat-square)](https://david-dm.org/feathersjs/authentication-popups)
+[![Download Status](https://img.shields.io/npm/dm/authentication-popups.svg?style=flat-square)](https://www.npmjs.com/package/authentication-popups)
 [![Slack Status](http://slack.feathersjs.com/badge.svg)](http://slack.feathersjs.com)
 
 > Server and client utils for implementing popup-based authentication flows
@@ -12,7 +12,7 @@
 ## Installation
 
 ```
-npm install feathers-authentication-popups --save
+npm install authentication-popups --save
 ```
 
 ## Documentation
@@ -26,7 +26,7 @@ There are two client utilities: one to assist with opening popups, and another t
 Opens a centered popup window at the given `url`.
 
 ```js
-import openLoginPopup from 'feathers-authentication-popups';
+import openLoginPopup from 'authentication-popups';
 
 openLoginPopup('/auth/github');
 ```
@@ -46,7 +46,7 @@ An EventEmitter automatically assigned as a global at `window.authAgent` to allo
 
 ```js
 // Adds 
-import 'feathers-authentication-popups';
+import 'authentication-popups';
 
 function doSomethingWithToken (token) {
 	// Do something with the token
@@ -100,7 +100,7 @@ Creates Express middleware that handles successful auth by returning an HTML pag
 * Closes the popup window.
 
 ```js
-const handleAuthPopups = require('feathers-authentication-popups/middleware');
+const handleAuthPopups = require('authentication-popups/middleware');
 
 app.get('/auth/success', handleAuthPopups(app))
 ```

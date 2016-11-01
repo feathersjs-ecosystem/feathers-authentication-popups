@@ -92,20 +92,26 @@ Triggers the event attached to the provided `eventName` and calls the subscribed
 
 The Express middleware is meant to be registered as the success callback of a Feathers authentication workflow.
 
-### `successHandler(app)`
+### `successHandler(options|cookieName)`
 
 Creates Express middleware that handles successful auth by returning an HTML page that:
-* Pulls the token from the `app` JWT cookie location. The default is `feathers-jwt`
+* Pulls the token from the cookie location.
 * Sends the token to the parent window through the `authAgent`.
 * Closes the popup window.
 
 ```js
-const successHandler = require('authentication-popups/middleware');
+var successHandler = require('authentication-popups/middleware');
 
-app.get('/auth/success', successHandler(app))
+// Pass an object containing a `name` attribute.
+var options = app.get('cookie');
+app.get('/auth/success', successHandler(options));
+
+// Or pass a string for the cookie name.
+app.get('/auth/success', successHandler('feathers-jwt'));
 ```
 
-1. **app** `{FeathersServer}`: The Feathers server object.
+1. **options** `{Object}`: An object with a `name` attribute.
+1. **cookieName** `{String}`: The cookie name. 
 
 ## License
 

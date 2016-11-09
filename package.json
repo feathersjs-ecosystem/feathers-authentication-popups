@@ -1,7 +1,7 @@
 {
   "name": "feathers-authentication-popups",
   "description": "Server and client utils for implementing popup-based authentication flows",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "homepage": "https://github.com/feathersjs/feathers-authentication-popups",
   "main": "lib/feathers-authentication-popups",
   "keywords": [

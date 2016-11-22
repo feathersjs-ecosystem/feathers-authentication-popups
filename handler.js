@@ -1,2 +1,2 @@
-import closure from './src/closure';
-export default closure;
+import handler from './src/handler';
+export default handler;

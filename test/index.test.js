@@ -7,12 +7,28 @@ global.window = {
 
 import { expect } from 'chai';
 import openLoginPopup, {authAgent, getCenterCoordinates} from '../src/feathers-authentication-popups';
+import clickHandler from '../src/handler';
 import EventEmitter from 'events';
 
 describe('Client Utils', () => {
   describe('OAuth Popup', () => {
     it(`opens new window`, () => {
       let authWindow = openLoginPopup('/auth/github');
+      expect(authWindow).to.not.equal(undefined);
+    });
+  });
+
+  describe('Closure / Click Handler Version', () => {
+    it(`returns a function`, () => {
+      expect(typeof clickHandler).to.equal('function');
+      expect(typeof clickHandler('/auth/github')).to.equal('function');
+    });
+
+    it(`opens new window`, () => {
+      let event = {
+        preventDefault () {}
+      };
+      let authWindow = clickHandler('/auth/github')(event);
       expect(authWindow).to.not.equal(undefined);
       global.window = oldWindow;
     });

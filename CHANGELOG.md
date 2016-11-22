@@ -1,5 +1,12 @@
 # Change Log
 
+## [v0.1.0](https://github.com/feathersjs/feathers-authentication-popups/tree/v0.1.0) (2016-11-22)
+[Full Changelog](https://github.com/feathersjs/feathers-authentication-popups/compare/v0.0.9...v0.1.0)
+
+**Merged pull requests:**
+
+- Add a closure version for simple use in JSX. [\#1](https://github.com/feathersjs/feathers-authentication-popups/pull/1) ([marshallswain](https://github.com/marshallswain))
+
 ## [v0.0.9](https://github.com/feathersjs/feathers-authentication-popups/tree/v0.0.9) (2016-11-09)
 [Full Changelog](https://github.com/feathersjs/feathers-authentication-popups/compare/v0.0.8...v0.0.9)
 

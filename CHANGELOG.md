@@ -1,5 +1,8 @@
 # Change Log
 
+## [v0.1.1](https://github.com/feathersjs/feathers-authentication-popups/tree/v0.1.1) (2016-11-22)
+[Full Changelog](https://github.com/feathersjs/feathers-authentication-popups/compare/v0.1.0...v0.1.1)
+
 ## [v0.1.0](https://github.com/feathersjs/feathers-authentication-popups/tree/v0.1.0) (2016-11-22)
 [Full Changelog](https://github.com/feathersjs/feathers-authentication-popups/compare/v0.0.9...v0.1.0)
 

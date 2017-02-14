@@ -5,7 +5,7 @@ window.authAgent = new EventEmitter();
 export const authAgent = window.authAgent;
 
 /*
- * A helper template to that opens the provided URL in a centered popup.
+ * A helper function that opens the provided URL in a centered popup.
  * Accepts an `options` object with `width` and `height` number properties.
  */
 export default function openLoginPopup (url, options = {}) {

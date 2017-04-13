@@ -22,7 +22,7 @@ export default function openLoginPopup (url, options = {}) {
  */
 export function getCenterCoordinates (window, width, height) {
   return {
-    left: window.screenX + (window.outerWidth - width) / 2,
-    top: window.screenY + (window.outerHeight - height) / 2
+    left: window.screenX + ((window.outerWidth - width) / 2),
+    top: window.screenY + ((window.outerHeight - height) / 2)
   };
 }

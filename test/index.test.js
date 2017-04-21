@@ -1,14 +1,14 @@
+import { expect } from 'chai';
+import openLoginPopup, {authAgent, getCenterCoordinates} from '../src/feathers-authentication-popups';
+import clickHandler from '../src/handler';
+import EventEmitter from 'events';
+
 var oldWindow = global.window;
 global.window = {
   open () {
     return {success: true};
   }
 };
-
-import { expect } from 'chai';
-import openLoginPopup, {authAgent, getCenterCoordinates} from '../src/feathers-authentication-popups';
-import clickHandler from '../src/handler';
-import EventEmitter from 'events';
 
 describe('Client Utils', () => {
   describe('OAuth Popup', () => {

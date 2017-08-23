@@ -41,7 +41,7 @@ An EventEmitter automatically assigned as a global at `window.authAgent` to allo
 **Usage in the primary application window:**
 
 ```js
-// Adds 
+// Adds
 import 'feathers-authentication-popups';
 
 function doSomethingWithToken (token) {
@@ -96,7 +96,7 @@ Creates Express middleware that handles successful auth by returning an HTML pag
 * Closes the popup window.
 
 ```js
-var successHandler = require('feathers-authentication-popups/middleware');
+var successHandler = require('feathers-authentication-popups/express');
 
 // Pass an object containing a `name` attribute.
 var options = app.get('cookie');
@@ -107,7 +107,7 @@ app.get('/auth/success', successHandler('feathers-jwt'));
 ```
 
 1. **options** `{Object}`: An object with a `name` attribute.
-1. **cookieName** `{String}`: The cookie name. 
+1. **cookieName** `{String}`: The cookie name.
 
 ## License
 

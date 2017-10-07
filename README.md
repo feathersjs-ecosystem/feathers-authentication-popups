@@ -72,13 +72,13 @@ Adds an event listener to the `authAgent` whose handler runs only once when the 
 1. **eventName** `{String}`: The name of the event to subscribe to.
 2. **handler** `{Function}`: A function to be executed to handle the event.
 
-### `authAgent.off(eventName, handler`)
+### `authAgent.off(eventName, handler)`
 
 Removes a handler function from the `authAgent`
 1. **eventName** `{String}`: The name of the event to unsubscribe from.
 2. **handler** `{Function}`: A reference to a previously-subscribed function to be unsubscribed.
 
-### `authAgent.emit(eventName, args)
+### `authAgent.emit(eventName, args)`
 
 Triggers the event attached to the provided `eventName` and calls the subscribed handlers with the `args`.
 1. **eventName** `{String}`: The name of the event to trigger.

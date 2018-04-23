@@ -15,7 +15,7 @@ markComment: >
   This issue has been automatically marked as stale because it has not had
   recent activity. It will be closed if no further activity occurs.
   Apologies if the issue could not be resolved successfully. FeathersJS ecosystem
-  modules are community maintained so there may be a chance that nobody is able to
-  help at the moment.
+  modules are community maintained so there may be a chance that there isn't anybody
+  available to help at the moment (see other ways to get help [here](https://docs.feathersjs.com/help/readme.html)).
 # Comment to post when closing a stale issue. Set to `false` to disable
 closeComment: false

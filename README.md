@@ -41,7 +41,7 @@ An EventEmitter automatically assigned as a global at `window.authAgent` to allo
 **Usage in the primary application window:**
 
 ```js
-// Adds 
+// Adds
 import 'feathers-authentication-popups';
 
 function doSomethingWithToken (token) {
@@ -72,13 +72,13 @@ Adds an event listener to the `authAgent` whose handler runs only once when the 
 1. **eventName** `{String}`: The name of the event to subscribe to.
 2. **handler** `{Function}`: A function to be executed to handle the event.
 
-### `authAgent.off(eventName, handler`)
+### `authAgent.off(eventName, handler)`
 
 Removes a handler function from the `authAgent`
 1. **eventName** `{String}`: The name of the event to unsubscribe from.
 2. **handler** `{Function}`: A reference to a previously-subscribed function to be unsubscribed.
 
-### `authAgent.emit(eventName, args)
+### `authAgent.emit(eventName, args)`
 
 Triggers the event attached to the provided `eventName` and calls the subscribed handlers with the `args`.
 1. **eventName** `{String}`: The name of the event to trigger.
@@ -96,7 +96,7 @@ Creates Express middleware that handles successful auth by returning an HTML pag
 * Closes the popup window.
 
 ```js
-var successHandler = require('feathers-authentication-popups/middleware');
+var successHandler = require('feathers-authentication-popups/express');
 
 // Pass an object containing a `name` attribute.
 var options = app.get('cookie');
@@ -107,7 +107,7 @@ app.get('/auth/success', successHandler('feathers-jwt'));
 ```
 
 1. **options** `{Object}`: An object with a `name` attribute.
-1. **cookieName** `{String}`: The cookie name. 
+1. **cookieName** `{String}`: The cookie name.
 
 ## License
 

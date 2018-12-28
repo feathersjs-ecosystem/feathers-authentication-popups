@@ -1,5 +1,7 @@
 # feathers-authentication-popups
 
+> __Unmaintained:__ This project is no longer maintained
+
 [![Greenkeeper badge](https://badges.greenkeeper.io/feathersjs/feathers-authentication-popups.svg)](https://greenkeeper.io/)
 
 [![Build Status](https://travis-ci.org/feathersjs/feathers-authentication-popups.png?branch=master)](https://travis-ci.org/feathersjs/feathers-authentication-popups)
